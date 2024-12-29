@@ -10,11 +10,12 @@ void hello(string words)
     std::cout << words << std::endl;
 }
 
-int main()
-{
-    string words = "I am the input the parameter";
-    thread t(hello, words);
-    t.join();
+//ctrl + / to comment out/in
+// int main()
+// {
+//     string words = "I am the input the parameter";
+//     thread t(hello, words);
+//     t.join();
 
-    return 0;
-}
+//     return 0;
+// }

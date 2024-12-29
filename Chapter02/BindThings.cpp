@@ -19,19 +19,19 @@ public:
     }
 };
 
-int main()
-{
-    auto bindFunction = bind(printSum,1,2);
-    bindFunction();
+// int main()
+// {
+//     auto bindFunction = bind(printSum,1,2);
+//     bindFunction();
 
-    auto bindFunction2 = bind(printSum, placeholders::_1, 10);
-    bindFunction2(5);
+//     auto bindFunction2 = bind(printSum, placeholders::_1, 10);
+//     bindFunction2(5);
 
-    std::function<void (const hello&)> f = &hello::sayHello;
-    hello h;
-    f(h);
+//     std::function<void (const hello&)> f = &hello::sayHello;
+//     hello h;
+//     f(h);
 
-    std::function<void (hello*)> f2 = std::bind(&hello::sayHello, placeholders::_1);
-    f2(&h);
+//     std::function<void (hello*)> f2 = std::bind(&hello::sayHello, placeholders::_1);
+//     f2(&h);
 
-}
+// }
